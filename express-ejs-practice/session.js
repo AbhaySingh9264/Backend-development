@@ -55,12 +55,9 @@ app.get("/deshboard",(req,res)=>{
         return res.status(404).json({
             msg:"unauthorised user"
         });
-        
-
     }
     res.send(`Welcome ${req.session.user.userName}`);
 });
-
 //logout(distroy session)
 app.get("/logout",(req,res)=>{
     res.session.destroy((err)=>{
