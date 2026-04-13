@@ -4,7 +4,6 @@ const session=require("express-session");
 const app=express();
 
 //middleware
-
 app.use(express.json());
 
 //session setup
